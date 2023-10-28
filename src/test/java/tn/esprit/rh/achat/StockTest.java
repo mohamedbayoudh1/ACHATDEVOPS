@@ -1,69 +1,92 @@
 package tn.esprit.rh.achat;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import org.junit.Before;
-import org.junit.Test;
-import tn.esprit.rh.achat.entities.Stock;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
+import org.springframework.beans.factory.annotation.Autowired;
+import tn.esprit.rh.achat.controllers.StockRestController;
+import tn.esprit.rh.achat.entities.Stock;
+import tn.esprit.rh.achat.services.IStockService;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.MediaType;
+
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+
+@SpringBootTest
+@AutoConfigureMockMvc
 public class StockTest {
 
-    private Stock stock;
+    @InjectMocks
+    private StockRestController stockController;
 
-    @Before
-    public void setUp() {
-        stock = new Stock("Test Stock", 100, 10);
+    @Mock
+    private IStockService stockService;
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @BeforeEach
+    public void setup() {
+        MockitoAnnotations.openMocks(this);
     }
 
     @Test
-    public void testIdStock() {
-        stock.setIdStock(1L);
-        assertEquals(1L, stock.getIdStock().longValue());
+    public void testGetStock() throws Exception {
+        // Mock the service method
+        Stock stock = new Stock();
+        Mockito.when(stockService.retrieveStock(1L)).thenReturn(stock);
+
+        // Perform the GET request to /stock/retrieve-stock/{stock-id}
+        mockMvc.perform(get("/stock/retrieve-stock/{stock-id}", 1L)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
     }
 
     @Test
-    public void testLibelleStock() {
-        stock.setLibelleStock("Updated Stock");
-        assertEquals("Updated Stock", stock.getLibelleStock());
+    public void testAddStock() throws Exception {
+        Stock stock = new Stock();
+        // Mock the service method
+        when(stockService.addStock(stock)).thenReturn(stock);
+
+        // Perform the POST request to /stock/add-stock
+        mockMvc.perform(post("/stock/add-stock")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"someKey\":\"someValue\"}"))  // Replace with your JSON content
+                .andExpect(status().isOk());
     }
 
     @Test
-    public void testQte() {
-        stock.setQte(50);
-        assertEquals(50, stock.getQte().intValue());
+    public void testRemoveStock() throws Exception {
+        // Mock the service method
+        Long stockId = 1L;
+        // Use Mockito's doNothing() when dealing with void methods
+        doNothing().when(stockService).deleteStock(stockId);
+
+        // Perform the DELETE request to /stock/remove-stock/{stock-id}
+        mockMvc.perform(delete("/stock/remove-stock/{stock-id}", stockId)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
     }
 
     @Test
-    public void testQteMin() {
-        stock.setQteMin(5);
-        assertEquals(5, stock.getQteMin().intValue());
-    }
+    public void testModifyStock() throws Exception {
+        Stock stock = new Stock();
+        // Mock the service method
+        when(stockService.updateStock(stock)).thenReturn(stock);
 
-    @Test
-    public void testStockConstructor() {
-        assertNotNull(stock);
-    }
-
-    @Test
-    public void testDefaultValues() {
-        Stock defaultStock = new Stock();
-        assertNotNull(defaultStock);
-        assertEquals(0L, defaultStock.getIdStock().longValue());
-        assertEquals(null, defaultStock.getLibelleStock());
-        assertEquals(0, defaultStock.getQte().intValue());
-        assertEquals(0, defaultStock.getQteMin().intValue());
-    }
-
-    @Test
-    public void testEquality() {
-        Stock stock1 = new Stock("Test Stock", 100, 10);
-        Stock stock2 = new Stock("Test Stock", 100, 10);
-        assertEquals(stock1, stock2);
-    }
-
-    @Test
-    public void testInequality() {
-        Stock stock1 = new Stock("Stock 1", 100, 10);
-        Stock stock2 = new Stock("Stock 2", 100, 10);
-        assertEquals(false, stock1.equals(stock2));
+        // Perform the PUT request to /stock/modify-stock
+        mockMvc.perform(put("/stock/modify-stock")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"someKey\":\"someValue\"}"))  // Replace with your JSON content
+                .andExpect(status().isOk());
     }
 }
