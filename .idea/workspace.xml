@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c635abc-2c0a-4913-8976-22a4f32b5738" name="Changes" comment="" />
+    <list default="true" id="8c635abc-2c0a-4913-8976-22a4f32b5738" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.rh.achat.ProduitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.rh.achat.ProduitTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.rh.achat.ProduitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.rh.achat.ProduitTest.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +106,7 @@
       <workItem from="1698511372668" duration="645000" />
       <workItem from="1698512031308" duration="1023000" />
       <workItem from="1698515098331" duration="214000" />
-      <workItem from="1698515681575" duration="2073000" />
+      <workItem from="1698515681575" duration="3083000" />
     </task>
     <servers />
   </component>
