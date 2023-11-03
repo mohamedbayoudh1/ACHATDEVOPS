@@ -1,8 +1,0 @@
-spring:
-  profiles: test
-  datasource:
-    url: jdbc:mysql://localhost:3306/testers
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
