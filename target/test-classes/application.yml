@@ -1,9 +1,8 @@
 spring:
+  profiles: test
   datasource:
-    url: jdbc:h2:mem:testdb
-  h2:
-    console:
-      enabled: false
+    url: jdbc:mysql://localhost:3306/testers
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update

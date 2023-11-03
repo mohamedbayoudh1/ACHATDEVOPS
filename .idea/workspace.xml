@@ -5,108 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c635abc-2c0a-4913-8976-22a4f32b5738" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/2143fe0e9efa2e05088eba5f28282c82a4dd97f0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/2143fe0e9efa2e05088eba5f28282c82a4dd97f0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/rh/achat/StockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/rh/achat/StockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchfc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchnc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchpc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/bundle.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/class.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/down.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/greenbar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/group.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/method.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/package.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/redbar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/session.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/source.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/up.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/CategorieProduitController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/CategorieProduitController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/FactureRestController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/FactureRestController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/FournisseurRestController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/FournisseurRestController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/OperateurController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/OperateurController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/ProduitRestController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/ProduitRestController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/ReglementRestController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/ReglementRestController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/SecteurActiviteController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/SecteurActiviteController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/StockRestController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/StockRestController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.controllers/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/CategorieFournisseur.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/CategorieFournisseur.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/CategorieProduit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/CategorieProduit.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/DetailFacture.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/DetailFacture.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/DetailFournisseur.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/DetailFournisseur.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/Facture.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/Facture.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/Fournisseur.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/Fournisseur.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/Operateur.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/Operateur.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/Produit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/Produit.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/Reglement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/Reglement.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/SecteurActivite.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/SecteurActivite.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/Stock.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/Stock.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.entities/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/CategorieProduitServiceImpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/CategorieProduitServiceImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/FactureServiceImpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/FactureServiceImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/FournisseurServiceImpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/FournisseurServiceImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/OperateurServiceImpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/OperateurServiceImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/ProduitServiceImpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/ProduitServiceImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/ReglementServiceImpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/ReglementServiceImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/SecteurActiviteServiceImpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/SecteurActiviteServiceImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/StockServiceImpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/StockServiceImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.services/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.util/SpringFoxSwaggerConfig.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.util/SpringFoxSwaggerConfig.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat.util/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat/AchatApplication.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat/AchatApplication.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.rh.achat/index.source.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.rh.achat.ProduitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.rh.achat.ProduitTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.rh.achat.StockTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.rh.achat.StockTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.rh.achat.ProduitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.rh.achat.ProduitTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.rh.achat.StockTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.rh.achat.StockTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/rh/achat/StockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tn/esprit/rh/achat/StockTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,31 +69,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "GestionStock",
-    "last_opened_file_path": "C:/Users/moham/Desktop/jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "spring.configuration.checksum": "b82d04823d936ca1edb92994b8cabeff",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;GestionStock&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/moham/Desktop/jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b82d04823d936ca1edb92994b8cabeff&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="AchatApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="achat" />
@@ -205,7 +118,8 @@
       <workItem from="1698512031308" duration="1023000" />
       <workItem from="1698515098331" duration="214000" />
       <workItem from="1698515681575" duration="6526000" />
-      <workItem from="1698529670765" duration="5300000" />
+      <workItem from="1698529670765" duration="6781000" />
+      <workItem from="1699043618133" duration="1155000" />
     </task>
     <servers />
   </component>
