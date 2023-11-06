@@ -11,3 +11,11 @@ Z
 *src/test/java/tn/esprit/rh/achat/main.java,7\2\7220b0b0225774a102166ea51c2aced11e745646
 a
 1src/test/java/tn/esprit/rh/achat/MockitoTest.java,0\0\00028bde071e5f9a8711f9da5401548ad8fe65da
+B
+docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
+:
+
+Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
