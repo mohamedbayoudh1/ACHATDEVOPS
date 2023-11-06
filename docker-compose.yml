@@ -1,0 +1,69 @@
+version: '3'
+
+services:
+
+  mysql-db:
+
+    image: mysql:latest
+
+    container_name: devops-db
+
+    ports:
+
+      - "3306:3306"
+
+    environment:
+
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+
+      MYSQL_DATABASE: achat_db
+
+    volumes:
+
+      - ./data.sql:/docker-entrypoint-initdb.d/data.sql
+
+    networks:
+
+      - my-network
+
+    restart: always  # Add this line to enable automatic restart
+
+
+
+  back-app:
+
+    image: mohamedbayoudh/achat
+
+    container_name: spring-back-project
+
+    ports:
+
+      - "8082:8089"
+
+    depends_on:
+
+      - mysql-db
+
+    environment:
+
+      SPRING_DATASOURCE_URL: jdbc:mysql://devops-db:3306/achat_db?&createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+
+      SPRING_DATASOURCE_USERNAME: root
+
+      SPRING_DATASOURCE_PASSWORD:
+
+    networks:
+
+      - my-network
+
+    volumes:
+
+      - ./backend-data:/app/data
+
+    restart: always  # Add this line to enable automatic restart
+
+
+
+networks:
+
+  my-network:
