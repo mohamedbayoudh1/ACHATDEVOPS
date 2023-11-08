@@ -16,6 +16,8 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 
+import java.util.UUID;
+
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -68,7 +70,7 @@ public class StockTest {
     @Test
     public void testRemoveStock() throws Exception {
         // Mock the service method
-        Long stockId = 1L;
+        Long stockId = 27L;
         // Use Mockito's doNothing() when dealing with void methods
         doNothing().when(stockService).deleteStock(stockId);
 
@@ -77,6 +79,8 @@ public class StockTest {
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
+
+
 
     @Test
     public void testModifyStock() throws Exception {
