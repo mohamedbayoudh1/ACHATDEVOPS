@@ -1,97 +1,78 @@
 package tn.esprit.rh.achat;
 
-import org.junit.jupiter.api.BeforeEach;
+
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ActiveProfiles;
-import tn.esprit.rh.achat.controllers.StockRestController;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import tn.esprit.rh.achat.entities.Stock;
-import tn.esprit.rh.achat.services.IStockService;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.MediaType;
+import tn.esprit.rh.achat.repositories.StockRepository;
+import tn.esprit.rh.achat.services.StockServiceImpl;
 
-import java.util.UUID;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
-import static org.mockito.Mockito.doNothing;
-import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.*;
 
-@ActiveProfiles("test")
-@SpringBootTest
-@AutoConfigureMockMvc
+@ContextConfiguration(classes = {StockServiceImpl.class})
+@ExtendWith(SpringExtension.class)
 public class StockTest {
-
-    @InjectMocks
-    private StockRestController stockController;
-
-    @Mock
-    private IStockService stockService;
-
+    @MockBean
+    private StockRepository stockRepository;
     @Autowired
-    private MockMvc mockMvc;
-
-    @BeforeEach
-    public void setup() {
-        MockitoAnnotations.openMocks(this);
-    }
-
+    private StockServiceImpl stockService;
     @Test
-    public void testGetStock() throws Exception {
-        // Mock the service method
+    void testRetrieveAllStocks(){
+        ArrayList<Stock> stockArrayList = new ArrayList<>();
+        when(stockRepository.findAll()).thenReturn(stockArrayList);
+        List<Stock> actualRetrieveAllStocksResult = stockService.retrieveAllStocks();
+        assertSame(stockArrayList, actualRetrieveAllStocksResult);
+        assertTrue(actualRetrieveAllStocksResult.isEmpty());
+        verify(stockRepository).findAll();
+    }
+    @Test
+    void testDeleteStock(){
+        doNothing().when(stockRepository).deleteById((Long) any());
+        stockService.deleteStock(2L);
+        verify(stockRepository).deleteById((Long) any());
+    }
+    @Test
+    void testAddStock(){
+        Stock stock =new Stock();
+        when(stockRepository.save(any(Stock.class))).thenReturn(stock);
+
+        Stock actualAddStocksResult = stockService.addStock(stock);
+
+        assertEquals(stock, actualAddStocksResult);
+
+    }
+    @Test
+    void testRetrieveStock(){
+        Stock stock =new Stock();
+
+
+        Long id = 500L;
+        when(stockRepository.findById(id)).thenReturn(Optional.of(stock));
+
+        Stock actualRetrieveStocksResult = stockService.retrieveStock(id);
+
+        assertEquals(stock, actualRetrieveStocksResult);
+
+    }
+    @Test
+    public void testUpdateStock() {
         Stock stock = new Stock();
-        Mockito.when(stockService.retrieveStock(1L)).thenReturn(stock);
-
-        // Perform the GET request to /stock/retrieve-stock/{stock-id}
-        mockMvc.perform(get("/stock/retrieve-stock/{stock-id}", 1L)
-                        .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk());
-    }
-
-    @Test
-    public void testAddStock() throws Exception {
-        Stock stock = new Stock();
-        // Mock the service method
-        when(stockService.addStock(stock)).thenReturn(stock);
-
-        // Perform the POST request to /stock/add-stock
-        mockMvc.perform(post("/stock/add-stock")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content("{\"someKey\":\"someValue\"}"))  // Replace with your JSON content
-                .andExpect(status().isOk());
-    }
-
-    @Test
-    public void testRemoveStock() throws Exception {
-        // Mock the service method
-        Long stockId = 27L;
-        // Use Mockito's doNothing() when dealing with void methods
-        doNothing().when(stockService).deleteStock(stockId);
-
-        // Perform the DELETE request to /stock/remove-stock/{stock-id}
-        mockMvc.perform(delete("/stock/remove-stock/{stock-id}", stockId)
-                        .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk());
-    }
 
 
+        when(stockRepository.save(any(Stock.class))).thenReturn(stock);
 
-    @Test
-    public void testModifyStock() throws Exception {
-        Stock stock = new Stock();
-        // Mock the service method
-        when(stockService.updateStock(stock)).thenReturn(stock);
+        Stock actualUpdateStocksResult = stockService.updateStock(stock);
 
-        // Perform the PUT request to /stock/modify-stock
-        mockMvc.perform(put("/stock/modify-stock")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content("{\"someKey\":\"someValue\"}"))  // Replace with your JSON content
-                .andExpect(status().isOk());
+        assertEquals(stock, actualUpdateStocksResult);
     }
 }
