@@ -51,8 +51,8 @@ public class ProduitTest {
 
     @Test
     void testDeleteProduit() {
-        doNothing().when(produitRepository).deleteById((Long) any());
+        doNothing().when(produitRepository).deleteById(any());
         produitServiceImpl.deleteProduit(123L);
-        verify(produitRepository).deleteById((Long) any());
+        verify(produitRepository).deleteById(any());
     }
 }

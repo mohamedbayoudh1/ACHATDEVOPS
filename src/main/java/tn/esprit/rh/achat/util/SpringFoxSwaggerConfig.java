@@ -29,7 +29,7 @@ public class SpringFoxSwaggerConfig {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.apiInfo(apiEndPointsInfo())
 				.securityContexts(Collections.singletonList(securityContext()))
-				.securitySchemes(Arrays.asList(apiKey()))
+				.securitySchemes(Collections.singletonList(apiKey()))
 				.select()
 				.apis(RequestHandlerSelectors.basePackage("com.esprit.examen.controller"))
 				.paths(PathSelectors.any())
@@ -59,7 +59,7 @@ public class SpringFoxSwaggerConfig {
 		AuthorizationScope authorizationScope = new AuthorizationScope("global", "accessEverything");
 		AuthorizationScope[] authorizationScopes = new AuthorizationScope[1];
 		authorizationScopes[0] = authorizationScope;
-		return Arrays.asList(new SecurityReference("Bearer", authorizationScopes)); 
+		return Collections.singletonList(new SecurityReference("Bearer", authorizationScopes));
 
 	}
 }
