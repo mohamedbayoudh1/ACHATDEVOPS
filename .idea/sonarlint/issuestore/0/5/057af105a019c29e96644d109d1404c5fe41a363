@@ -1,3 +1,5 @@
 
-~
-java:S1488G"cImmediately return this expression instead of assigning it to the temporary variable "fournisseur".(Œ„«Èşÿÿÿÿ
+…
+java:S1488G"cImmediately return this expression instead of assigning it to the temporary variable "fournisseur".(Œ„«Èşÿÿÿÿ8øÛàåë1
+f
+java:S2259O"IA "NullPointerException" could be thrown; "fournisseur" is nullable here.(‰²õ8‘Üàåë1
