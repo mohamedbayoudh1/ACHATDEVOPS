@@ -128,7 +128,7 @@
 		<repository>
 			<id>deploymentRepo</id>
 			<name>mohamed-bayoudh-5sleam1</name>
-			<url>http://192.168.43.223:8081/repository/mohamed-bayoudh-5sleam1/</url>
+			<url>http://192.168.33.10:8081/repository/mohamed-bayoudh-5sleam1/</url>
 		</repository>
 	</distributionManagement>
 </project>
